@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-family: saritha;
+  src: url(saritha);
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.25em;
+}
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #f3b7b8;
+}
+
+button:hover {
+  background-color: #c48889;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-family: saritha;
+  src: url(saritha);
+  font-weight: bold;
+  color: #ffd7d7;
+  font-size: 2em;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #915758;
+}
+
+header a:hover {
+  color: #c48889;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("Img/img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: white;
+}
+
+#hero button {
+  font-size: 1.75em;
+}
+
+#Diseñamos .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#nuestros-Diseños {
+  background-color: #915758;
+  color: white;
+  text-align: center;
+}
+
+#nuestros-Diseños .container {
+  padding: 150px 12px;
+}
+
+#nuestros-Diseños h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#nuestros-Diseños p {
+  display: none;
+}
+
+#nuestros-Diseños .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("Img/img2.jpg");
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("");
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 850px) {
+  header {
+    position: fixed;
+    width: 102%;
+    height: 12%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 10px;
+  }
+
+  #hero h1 {
+    font-size: 4em;
+  }
+
+  #Diseñamos .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #Diseñamos .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #Diseñamos h2 {
+    margin-top: 0px;
+  }
+
+  #Diseñamos .img-container {
+    background-image: url(img/img5.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+
+  #nuestros-Diseños .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #nuestros-Diseños p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #nuestros-Diseños h2 {
+    font-size: 4em;
+  }
+
+  #nuestros-Diseños h3 {
+    margin-top: 0;
+  }
+
+  #nuestros-Diseños .carta {
+    padding: 50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .carta:first-child {
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+  }
+
+  .carta:nth-child(2) {
+    background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+  }
+
+  footer .container {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1200px) {
+  #caracteristicas {
+    background-position-x: calc(100vw - 800px);
+  }
+}
+
+/*nosotros*/
+
+.Quienes-somos .texto {
+  width: 50%;
+  max-width: 600px;
+  text-align: initial;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Quienes-somos h5 {
+  margin-top: 0px;
+}
