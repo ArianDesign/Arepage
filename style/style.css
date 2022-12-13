@@ -102,7 +102,7 @@ header a:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../Img/img.jpg");
+    url("Img/img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -154,7 +154,7 @@ header a:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../Img/img2.jpg");
+    url("Img/img2.jpg");
 }
 
 .carta:nth-child(2) {
@@ -226,7 +226,7 @@ footer .container {
   }
 
   #Diseñamos .img-container {
-    background-image: url(../Img/img5.jpg);
+    background-image: url(img/img5.jpg);
     background-size: cover;
     background-position: center center;
     height: 500px;
